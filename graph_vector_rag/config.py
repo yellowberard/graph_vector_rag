@@ -13,13 +13,13 @@ class Settings:
 
     # Qdrant Database Configurations
     QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
-    QDRANT_ENTITY_COLLECTION = ""
-    QDRANT_CHUNK_COLLECTION = ""
+    QDRANT_ENTITY_COLLECTION = os.getenv("QDRANT_ENTITY_COLLECTION")
+    QDRANT_CHUNK_COLLECTION = os.getenv("QDRANT_CHUNK_COLLECTION")
 
     # --- Neo4j Database Configurations for TWO separate instances ---    
-    NEO4J_PDF_KG_URI = "neo4j+s://6140a227.databases.neo4j.io"
-    NEO4J_PDF_KG_USER = "neo4j"
-    NEO4J_PDF_KG_PASSWORD = "hicibQq67Vnx1B9kugrj5JE68lj-I4Znoh5rTeWto80"
+    NEO4J_PDF_KG_URI = os.getenv("NEO4J_PDF_KG_URI")
+    NEO4J_PDF_KG_USER = os.getenv("NEO4J_PDF_USERNAME")
+    NEO4J_PDF_KG_PASSWORD = os.getenv("NEO4J_PDF_KG_PASSWORD")
 
     # Pipeline Behavior
     SEARCH_LIMIT = int(os.getenv("SEARCH_LIMIT", "5"))
