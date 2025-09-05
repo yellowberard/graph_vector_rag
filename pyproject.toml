@@ -1,0 +1,14 @@
+[project]
+name = "graph-vector-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dspy>=3.0.3",
+    "huggingface-hub[cli]>=0.34.4",
+    "neo4j>=5.28.2",
+    "qdrant-client>=1.15.1",
+    "sentence-transformers>=5.1.0",
+    "streamlit>=1.49.1",
+]
