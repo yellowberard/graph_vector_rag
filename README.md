@@ -34,15 +34,11 @@
 
 ### 🧠 AI & ML Capabilities
 - **Advanced Embeddings**: Support for multiple embedding models
-- **Graph Neural Networks**: Optional GNN integration
 - **Semantic Reasoning**: Context-aware response generation
-- **Adaptive Learning**: Query pattern optimization
 
 ### 🔐 Enterprise Features
 - **Secure by Design**: Built-in security best practices
 - **Monitoring & Logging**: Comprehensive observability
-- **API-First Architecture**: REST and GraphQL endpoints
-- **Cloud Native**: Kubernetes and Docker support
 
 ---
 
@@ -52,11 +48,9 @@
 |-----------|------------|-----------|
 | **Vector Database** | Qdrant | High-performance vector similarity search with metadata filtering |
 | **Graph Database** | Neo4j | Industry-leading graph database with Cypher query language |
-| **Backend Framework** | Python/FastAPI | Fast, modern web framework with automatic API documentation |
 | **Embeddings** | OpenAI/Sentence-Transformers | State-of-the-art text embeddings for semantic search |
-| **LLM Integration** | LangChain | Flexible framework for building LLM applications |
+| **LLM Integration** | DSPy | Flexible framework for building LLM applications |
 | **Package Management** | UV | Ultra-fast Python package installer and resolver |
-| **Containerization** | Docker | Consistent deployment across environments |
 | **Configuration** | Pydantic Settings | Type-safe configuration management |
 
 ---
@@ -67,7 +61,6 @@
 
 > **Note**: Ensure you have the following installed:
 > - Python 3.9+
-> - Docker & Docker Compose
 > - Git
 
 ### 📦 Installation
@@ -93,12 +86,7 @@
    # Edit .env with your configuration
    ```
 
-4. **Start infrastructure services**
-   ```bash
-   docker-compose up -d qdrant neo4j
-   ```
-
-5. **Initialize the application**
+4. **Initialize the application**
    ```bash
    uv run python main.py
    ```
@@ -120,7 +108,6 @@ HUGGINGFACE_API_KEY=your_hf_key
 
 # Application Settings
 LOG_LEVEL=INFO
-API_PORT=8000
 MAX_CONCURRENT_QUERIES=10
 ```
 
