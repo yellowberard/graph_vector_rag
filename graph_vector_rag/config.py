@@ -13,8 +13,8 @@ class Settings:
 
     # Qdrant Database Configurations
     QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
-    QDRANT_ENTITY_COLLECTION = "opt3001_entities_crew_ai"
-    QDRANT_CHUNK_COLLECTION = "data-sheet"
+    QDRANT_ENTITY_COLLECTION = ""
+    QDRANT_CHUNK_COLLECTION = ""
 
     # --- Neo4j Database Configurations for TWO separate instances ---    
     NEO4J_PDF_KG_URI = "neo4j+s://6140a227.databases.neo4j.io"
